@@ -27,7 +27,7 @@ def upload():
         print(destination)
         file.save(destination)
 
-    return date_find(path = destination)
+    return "date_find(path = destination)"
 
 @app.route("/api", methods = ['POST'])
 def api():
