@@ -26,7 +26,7 @@ def upload():
         print(destination)
         file.save(destination)
 
-    return render_template("complete.html")
+    return "Hello"
 
 if __name__ == "__main__":
-    app.run(threaded=True, port=5000)
+    app.run(threaded=True, port=5000, debug = True)
