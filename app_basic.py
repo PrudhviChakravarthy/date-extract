@@ -27,11 +27,7 @@ def upload():
         print(destination)
         file.save(destination)
 
-    return "date_find(path = destination)"
-
-@app.route("/api", methods = ['POST'])
-def api():
-
+    return date_find(path = destination)
 
 if __name__ == "__main__":
     app.run(threaded=True, port=5000, debug = True)

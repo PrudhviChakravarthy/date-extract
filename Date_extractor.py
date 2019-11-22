@@ -48,14 +48,14 @@ def sep(text):
         for j in l[0]:
             H = search_dates(j)
             if H == None:
-                return None
+                return "None"
             else:
                 for i in H:
                     j = i[1].date()
                     j = i[1].strftime('%Y/%m/%d')
                     return j
     else :
-        return None
+        return "None"
 
             
 
