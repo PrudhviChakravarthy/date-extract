@@ -1,6 +1,5 @@
 from PIL import Image
 import pytesseract
-import cv2
 import re
 import datefinder
 from dateparser.search import search_dates
