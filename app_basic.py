@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template, request
+from Date_extractor import date_find
 
 __author__ = 'ibininja'
 
@@ -26,7 +27,11 @@ def upload():
         print(destination)
         file.save(destination)
 
-    return "Hello"
+    return date_find(destination)
+
+@app.route("/api", methods = ['POST'])
+def api():
+
 
 if __name__ == "__main__":
     app.run(threaded=True, port=5000, debug = True)
