@@ -21,7 +21,7 @@ def user():
     if  x == None :
         return {"Date" : x}
     else:
-        return {"Date" : x}
+        return {"Date" : 'null'}
     #return "done"
 
 if __name__ == "__main__":
