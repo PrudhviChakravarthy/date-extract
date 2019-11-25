@@ -14,7 +14,7 @@ def index():
 
 @app.route('/extract_date', methods = ['POST'])
 def user():
-    x = request.form['string']
+    x = request.form['base_64_image_content']
     #return str(len(x))
     base_converter(x)
     x = date_find("image.png")
